@@ -643,8 +643,8 @@ $sidebar-display: "sidebar-display";
   overflow-y: auto;
   width: $sidebar-width;
   z-index: 99;
-  background: var(--sidebar-bg);
-
+  // background: var(--sidebar-bg);
+  background: rgb(250, 248, 248);
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
     display: none;
@@ -660,7 +660,8 @@ $sidebar-display: "sidebar-display";
     &:hover {
       @include no-text-decoration;
 
-      color: var(--sidebar-active-color) !important;
+      // color: var(--sidebar-active-color) !important;
+      color: rgb(70, 209, 214) !important;
     }
   }
 
@@ -735,7 +736,8 @@ $sidebar-display: "sidebar-display";
 
     &.active {
       .nav-link {
-        color: var(--sidebar-active-color);
+        // color: var(--sidebar-active-color);
+        color: brown;
       }
     }
 
