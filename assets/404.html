@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "404: Page not found"
+title: "페이지를 찾을 수 없음"
 permalink: /404.html
 
 redirect_from:
@@ -12,20 +12,22 @@ redirect_from:
 {% include lang.html %}
 
 <div class="lead">
-
+  
   {%- capture _head_back -%}
-    <a href="{{ '/' | relative_url }}">{{ site.data.locales[lang].not_found.head_back }}</a>
+  <a href="{{ '/' | relative_url }}">{{ site.data.locales[lang].not_found.head_back }}</a>
   {%- endcapture -%}
-
+  
   {%- capture _archives_page -%}
-    <a href="{{ 'archives' | relative_url }}">{{ site.data.locales[lang].not_found.archives_page }}</a>
+  <a href="{{ 'archives' | relative_url }}">{{ site.data.locales[lang].not_found.archives_page }}</a>
   {%- endcapture -%}
-
+  
+  
   <p>{{site.data.locales[lang].not_found.statment }}</p>
-
+  
   <p>{{ site.data.locales[lang].not_found.hint_template
     | replace: ':HEAD_BAK', _head_back
     | replace: ':ARCHIVES_PAGE', _archives_page }}
   </p>
-
+  
+  <img src="/assets/img/Not Found.jpg"/>
 </div>
