@@ -11,6 +11,7 @@ pin: false
 # **파이썬 소개**
 
 ![logo](./imgs/logo.png)
+![logo](/imgs/logo.png)
 
 ```python
 print('Hello World!')
